@@ -1,0 +1,45 @@
+<hr>
+
+<div class="filters">
+    Отфильтровать по: порядку значимости удовольствию случайно
+</div>
+
+<div class="items">
+
+    <div class="strike">
+        <span>Business</span>
+    </div>
+
+    {{#each model as |item|}}
+        {{#if item.isBusiness}}
+        {{#check-item id=item.id title=item.title tags=item.tags }}
+            {{item.description}}
+        {{/check-item}}
+        {{/if}}
+    {{/each}}
+
+    <div class="strike">
+        <span>Tech</span>
+    </div>
+
+    {{#each model as |item|}}
+        {{#if item.isTech}}
+        {{#check-item id=item.id title=item.title tags=item.tags }}
+            {{item.description}}
+        {{/check-item}}
+        {{/if}}
+    {{/each}}
+
+
+</div>
+
+<div class="score">
+    <div class="strike">
+        <span>Score</span>
+    </div>
+    <button type="button" class="btn btn-default btn-lg">Сабмит ит!</button>
+</div>
+
+<hr>
+
+{{outlet}}

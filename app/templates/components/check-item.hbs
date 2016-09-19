@@ -1,0 +1,28 @@
+<div class="check-item-container">
+    <div class="row">
+        <div class="col-lg-2">
+            <div class="check-item-checkbox-container">
+
+                <div class="checkbox">
+                    <input type="checkbox" id="cb-{{id}}" name="cb-{{id}}" />
+                    <label for="cb-{{id}}"></label>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-8">
+
+            <div class="check-item">
+              <h4>{{title}}</h4>
+              <p>{{yield}}</p>
+              <p>
+                  {{#each tags as |tag|}}
+                    <span class="label label-default">{{ tag }}</span>
+                  {{/each}}
+              </p>
+            </div>
+
+        </div>
+
+    </div>
+</div>

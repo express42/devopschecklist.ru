@@ -1,0 +1,141 @@
+@media (min-width: 1200px) {
+    .container{
+        max-width: 780px;
+    }
+}
+
+html {
+}
+
+body {
+    background-color: #eee;
+    font-family: "Proxima Nova", Arial, sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.header {
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+}
+
+.filters {
+    text-align: center;
+}
+
+.score {
+    text-align: center;
+}
+
+.check-item-checkbox-container {
+    text-align: center;
+}
+
+.check-item-container:hover{
+   background-color: #e6eeff;
+}
+
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    color: #444;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: #ccc;
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.checkbox, .checkbox-alt {
+  #background-color: #fff;
+  display: inline-block;
+  height: 50px;
+  margin: 0 0.25em;
+  width: 50px;
+}
+.checkbox label, .checkbox-alt label {
+  display: block;
+  height: 50px;
+  position: relative;
+  width: 50px;
+}
+.checkbox label:after, .checkbox-alt label:after {
+  /*
+  This element has a border on the right, and top. By rotating it looks like a check symbol, but the wrong way. That's why I'm flipping it with scaleX(-1)
+  */
+  -moz-transform: scaleX(-1) rotate(135deg);
+  -ms-transform: scaleX(-1) rotate(135deg);
+  -webkit-transform: scaleX(-1) rotate(135deg);
+  transform: scaleX(-1) rotate(135deg);
+  /*
+  I want to position the symbol using the left top, because when increasing the width and height of an object, it expands from the top left corner as well. That is what makes it looks like it's being drawn.
+  */
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  border-right: 4px solid #cee;
+  border-top: 4px solid #cee;
+  content: '';
+  display: block;
+  height: 20px;
+  left: 14px;
+  position: absolute;
+  top: 26px;
+  width: 10px;
+}
+.checkbox label:hover:after, .checkbox-alt label:hover:after {
+  border-color: #bdd;
+}
+.checkbox input, .checkbox-alt input {
+  display: none;
+}
+.checkbox input:checked + label:after, .checkbox-alt input:checked + label:after {
+  -webkit-animation: check 0.8s;
+  -moz-animation: check 0.8s;
+  -o-animation: check 0.8s;
+  animation: check 0.8s;
+  border-color: #6aa; # #009900
+}
+.checkbox.checkbox-alt label:hover:after, .checkbox-alt.checkbox-alt label:hover:after {
+  -webkit-animation: check 0.8s ease infinite;
+  -moz-animation: check 0.8s ease infinite;
+  -o-animation: check 0.8s ease infinite;
+  animation: check 0.8s ease infinite;
+}
+.checkbox.checkbox-alt input:checked + label:after, .checkbox-alt.checkbox-alt input:checked + label:after {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  animation: none;
+}
