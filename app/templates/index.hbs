@@ -9,16 +9,24 @@
     <span class="tag">Тестирование</span>
 </div>
 
+<br>
+
 <div class="items">
 
     <div class="strike">
         <span>Alignment</span>
     </div>
 
+    <div class="row">
+        <div class="col-lg-12 category-description">
+            Unifying group and individual direction and goals around the singular vision of the organization.
+        </div>
+    </div>
+
+
     {{#each model as |item|}}
         {{#if item.isAlignment}}
-        {{#check-item id=item.id title=item.title tags=item.tags }}
-            {{item.description}}
+        {{#check-item id=item.id title=item.title tags=item.tags description=item.description}}
         {{/check-item}}
         {{/if}}
     {{/each}}
@@ -27,10 +35,15 @@
         <span>Context</span>
     </div>
 
+    <div class="row">
+        <div class="col-lg-12 category-description">
+            Making relevant information and contact available to those who need it, when they need it.
+        </div>
+    </div>
+
     {{#each model as |item|}}
         {{#if item.isContext}}
-        {{#check-item id=item.id title=item.title tags=item.tags }}
-            {{item.description}}
+        {{#check-item id=item.id title=item.title tags=item.tags description=item.description}}
         {{/check-item}}
         {{/if}}
     {{/each}}
@@ -39,10 +52,15 @@
         <span>Learning</span>
     </div>
 
+    <div class="row">
+        <div class="col-lg-12 category-description">
+            Empowering personal growth and fostering understanding through continuous improvement.
+        </div>
+    </div>
+
     {{#each model as |item|}}
         {{#if item.isLearning}}
-        {{#check-item id=item.id title=item.title tags=item.tags }}
-            {{item.description}}
+        {{#check-item id=item.id title=item.title tags=item.tags description=item.description}}
         {{/check-item}}
         {{/if}}
     {{/each}}
@@ -51,10 +69,17 @@
         <span>Lifecycle</span>
     </div>
 
+    <div class="row">
+        <div class="col-lg-12 category-description">
+            Focus on software as a product deserving of care, attention and reflection, within an ever-changing
+            <br>ecosystem.
+        </div>
+    </div>
+
+
     {{#each model as |item|}}
         {{#if item.isLifecycle}}
-        {{#check-item id=item.id title=item.title tags=item.tags }}
-            {{item.description}}
+        {{#check-item id=item.id title=item.title tags=item.tags description=item.description}}
         {{/check-item}}
         {{/if}}
     {{/each}}
@@ -63,10 +88,15 @@
         <span>Organization</span>
     </div>
 
+    <div class="row">
+        <div class="col-lg-12 category-description">
+            Providing structure for interaction and cohesion supporting collaboration and productivity.
+        </div>
+    </div>
+
     {{#each model as |item|}}
         {{#if item.isOrganization}}
-        {{#check-item id=item.id title=item.title tags=item.tags }}
-            {{item.description}}
+        {{#check-item id=item.id title=item.title tags=item.tags description=item.description}}
         {{/check-item}}
         {{/if}}
     {{/each}}
@@ -75,10 +105,16 @@
         <span>Process</span>
     </div>
 
+    <div class="row">
+        <div class="col-lg-12 category-description">
+            Rituals crafted to foster consistency and confidence, providing a framework for continuous
+            <br>improvement.
+        </div>
+    </div>
+
     {{#each model as |item|}}
         {{#if item.isProcess}}
-        {{#check-item id=item.id title=item.title tags=item.tags }}
-            {{item.description}}
+        {{#check-item id=item.id title=item.title tags=item.tags description=item.description}}
         {{/check-item}}
         {{/if}}
     {{/each}}

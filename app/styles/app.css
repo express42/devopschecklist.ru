@@ -96,11 +96,7 @@ body {
     text-align: center;
     background-color: #f4f8fb;
     padding: 40px;
-    padding-bottom: 0px;
-}
-
-.check-item-checkbox-container {
-    text-align: center;
+    padding-bottom: 40px;
 }
 
 .check-item-container {
@@ -110,6 +106,22 @@ body {
 
 .check-item-container:hover{
    background-color: #f4f8fb;
+}
+
+.check-item-checkbox-container {
+    text-align: center;
+}
+
+.check-item-description-btn {
+    font-size: 4em;
+    color: #ccc;
+}
+
+.category-description {
+    text-align: center;
+    color: #ccc;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .strike {
@@ -123,6 +135,7 @@ body {
     position: relative;
     display: inline-block;
     font-size: 2em;
+    font-weight: 600;
     color: #444;
 }
 

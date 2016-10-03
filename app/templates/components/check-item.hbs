@@ -10,7 +10,7 @@
 
             </div>
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-9">
 
             <div class="check-item">
               <h4>{{title}}</h4>
@@ -23,6 +23,11 @@
             </div>
 
         </div>
+        {{#if description}}
+        <div class="col-lg-1">
+            <span class="check-item-description-btn">&#8964;</span>
+        </div>
+        {{/if}}
 
     </div>
 </div>
