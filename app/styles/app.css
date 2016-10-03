@@ -68,6 +68,7 @@ body {
 
 .check-item p.description {
     color: #444;
+    font-size: 0.9em;
 }
 
 .check-item p.tags span.tag {
@@ -93,7 +94,7 @@ body {
 }
 
 .check-item-container:hover{
-   background-color: #e6eeff;
+   background-color: #f4f8fb;
 }
 
 .strike {
