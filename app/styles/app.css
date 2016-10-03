@@ -55,6 +55,26 @@ body {
     text-align: center;
 }
 
+.filters span.tag {
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 0.8em;
+}
+
+
+.check-item h4 {
+    font-size: 1.5em;
+}
+
+.check-item p.description {
+    color: #444;
+}
+
+.check-item p.tag {
+    color: #aaa;
+    font-size: 0.8em;
+}
+
 .score {
     text-align: center;
 }

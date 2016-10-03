@@ -7,11 +7,27 @@ export default DS.Model.extend({
     tags: DS.attr(),
     category: DS.attr(),
 
-    isBusiness: Ember.computed('category', function() {
-        return this.get('category') === 'business';
+    isAlignment: Ember.computed('category', function() {
+        return this.get('category') === 'alignment';
     }),
 
-    isTech: Ember.computed('category', function() {
-        return this.get('category') === 'tech';
+    isContext: Ember.computed('category', function() {
+        return this.get('category') === 'context';
+    }),
+
+    isLearning: Ember.computed('category', function() {
+        return this.get('category') === 'learning';
+    }),
+
+    isLifecycle: Ember.computed('category', function() {
+        return this.get('category') === 'lifecycle';
+    }),
+
+    isOrganization: Ember.computed('category', function() {
+        return this.get('category') === 'organisation';
+    }),
+
+    isProcess: Ember.computed('category', function() {
+        return this.get('category') === 'process';
     }),
 });

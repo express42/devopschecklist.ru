@@ -1,17 +1,22 @@
 <hr>
 
 <div class="filters">
-    Отфильтровать по: порядку значимости удовольствию случайно
+    Фильтр:
+    <span class="tag">Все</span>
+    <span class="tag">Культура</span>
+    <span class="tag">Шэринг</span>
+    <span class="tag">Автоматизация</span>
+    <span class="tag">Тестирование</span>
 </div>
 
 <div class="items">
 
     <div class="strike">
-        <span>Business</span>
+        <span>Alignment</span>
     </div>
 
     {{#each model as |item|}}
-        {{#if item.isBusiness}}
+        {{#if item.isAlignment}}
         {{#check-item id=item.id title=item.title tags=item.tags }}
             {{item.description}}
         {{/check-item}}
@@ -19,11 +24,59 @@
     {{/each}}
 
     <div class="strike">
-        <span>Tech</span>
+        <span>Context</span>
     </div>
 
     {{#each model as |item|}}
-        {{#if item.isTech}}
+        {{#if item.isContext}}
+        {{#check-item id=item.id title=item.title tags=item.tags }}
+            {{item.description}}
+        {{/check-item}}
+        {{/if}}
+    {{/each}}
+
+    <div class="strike">
+        <span>Learning</span>
+    </div>
+
+    {{#each model as |item|}}
+        {{#if item.isLearning}}
+        {{#check-item id=item.id title=item.title tags=item.tags }}
+            {{item.description}}
+        {{/check-item}}
+        {{/if}}
+    {{/each}}
+
+    <div class="strike">
+        <span>Lifecycle</span>
+    </div>
+
+    {{#each model as |item|}}
+        {{#if item.isLifecycle}}
+        {{#check-item id=item.id title=item.title tags=item.tags }}
+            {{item.description}}
+        {{/check-item}}
+        {{/if}}
+    {{/each}}
+
+    <div class="strike">
+        <span>Organization</span>
+    </div>
+
+    {{#each model as |item|}}
+        {{#if item.isOrganization}}
+        {{#check-item id=item.id title=item.title tags=item.tags }}
+            {{item.description}}
+        {{/check-item}}
+        {{/if}}
+    {{/each}}
+
+    <div class="strike">
+        <span>Process</span>
+    </div>
+
+    {{#each model as |item|}}
+        {{#if item.isProcess}}
         {{#check-item id=item.id title=item.title tags=item.tags }}
             {{item.description}}
         {{/check-item}}
@@ -38,6 +91,12 @@
         <span>Score</span>
     </div>
     <button type="button" class="btn btn-default btn-lg">Сабмит ит!</button>
+</div>
+
+<div class="footer">
+
+    <!-- TODO -->
+
 </div>
 
 <hr>

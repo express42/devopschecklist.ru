@@ -14,10 +14,10 @@
 
             <div class="check-item">
               <h4>{{title}}</h4>
-              <p>{{yield}}</p>
-              <p>
+              <p class="description">{{yield}}</p>
+              <p class="tag">
                   {{#each tags as |tag|}}
-                    <span class="label label-default">{{ tag }}</span>
+                    <span>{{ tag }}</span>
                   {{/each}}
               </p>
             </div>
