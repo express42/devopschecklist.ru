@@ -77,6 +77,14 @@ body {
 
 .score {
     text-align: center;
+    padding: 40px;
+}
+
+.footer {
+    text-align: center;
+    background-color: #f4f8fb;
+    padding: 40px;
+    padding-bottom: 0px;
 }
 
 .check-item-checkbox-container {
