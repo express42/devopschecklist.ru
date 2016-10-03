@@ -9,7 +9,12 @@ html {
 
 body {
     background-color: #eee;
-    font-family: "Proxima Nova", Arial, sans-serif;
+    font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    background: #e9e8e4;
+    font-size: 16px;
+    color: #3e3e3e;
+    text-rendering: optimizeLegibility;
 }
 
 .container {
@@ -20,10 +25,30 @@ body {
 
 .header {
     text-align: center;
+    max-width: 475px;
+    display: block;
+    margin: 0 auto;
+    padding: 40px 0 20px 0;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 34px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.header h1 a {
+    display: block;
+    padding: 30px;
+    border: 5px solid #3e3e3e;
+    text-decoration: none;
+    color: #3e3e3e;
 }
 
 .intro {
     text-align: center;
+    padding-left: 4em;
+    padding-right: 4em;
 }
 
 .filters {
