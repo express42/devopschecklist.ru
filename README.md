@@ -1,7 +1,12 @@
 # Devopschecklist
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Текст айтемов чеклиста в файле https://github.com/express42/devopschecklist.ru/blob/master/app/routes/application.js
+
+Приложение развернуто как static page на Amazon S3
+Деплой происхоит с помощью ember-cli-deploy
+
+
+## Ниже стандартный README Ember.js, описывающий, как запустить сайт локально
 
 ## Prerequisites
 
