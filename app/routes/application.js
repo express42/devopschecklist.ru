@@ -8,8 +8,8 @@ export default Ember.Route.extend({
                 id: 1,
                 type: 'check-item',
                 attributes: {
-                  title: 'We prioritize according to business objectives.',
-                  description: 'DevOps is all about alignment. It was born out of frustration and trouble between the disparate priorities and incentives of Development and Operations teams. Alignment comes from unifying towards a common goal.',
+                  title: 'Наши приоритеты соответствуют бизнес целям',
+                  description: 'Идея DevOps завязана на концепции согласованности. Эта идея появилась в следствии несовместимых приоритетов и стремлений команд разработки и эксплуатации.',
                   category: 'alignment',
                   checked: false,
                   tags: ['Культура']
@@ -19,8 +19,8 @@ export default Ember.Route.extend({
               id: 2,
               type: 'check-item',
               attributes: {
-                title: 'We volunteer for tasks rather than having them assigned',
-                description: "Autonomy is a critical facet to motivation and job satisfaction. By allowing team members to self-select tasks, you'll see them work on what they're best suited to complete.",
+                title: 'Мы предпочитаем добровольно браться за задачи, а не ждать пока нам их назначат.',
+                description: 'Автономность - важная часть мотивации и удовлетворенности работой. Позволяя членам команды выбирать себе задачи, вы увидите, что они будут заниматься теми задачами, для выполнения которых они подходят лучше всего.',
                 category: 'alignment',
                 checked: false,
                 tags: ['Культура']
@@ -30,7 +30,7 @@ export default Ember.Route.extend({
               id: 3,
               type: 'check-item',
               attributes: {
-                title: 'Our team has clear objectives that correspond with our company vision.',
+                title: 'У нашей команды есть четкие цели, которые соответствуют видению компании',
                 description: '',
                 category: 'alignment',
                 checked: false,
@@ -41,7 +41,7 @@ export default Ember.Route.extend({
               id: 4,
               type: 'check-item',
               attributes: {
-                title: "Our product team is focused on sustainable velocity rather than current speed.",
+                title: 'Наша продуктовая команда ориентируется на поддержание устойчивой скорости работы, меньше концентрируясь на текущей скорости',
                 description: "",
                 category: "alignment",
                 checked: false,
@@ -52,7 +52,7 @@ export default Ember.Route.extend({
               id: 5,
               type: 'check-item',
               attributes: {
-                title: "We focus on time to repair rather than time between issues.",
+                title: 'Мы концентрируем свое внимание на времени, требуемом для починки, а не на времени между инцидентами',
                 description: "",
                 category: "alignment",
                 checked: false,
@@ -63,7 +63,7 @@ export default Ember.Route.extend({
               id: 6,
               type: 'check-item',
               attributes: {
-                title: "DevOps is not isolated to a specific role in our organization.",
+                title: 'DevOps не ограничивается какой-то определенной ролью в нашей организации.',
                 description: "",
                 category: "alignment",
                 checked: false,
@@ -74,7 +74,7 @@ export default Ember.Route.extend({
               id: 7,
               type: 'check-item',
               attributes: {
-                title: "DevOps is not isolated to a specific team in our organization.",
+                title: 'DevOps не ограничивается какой-то определенной командой в нашей организации.',
                 description: "",
                 category: "alignment",
                 checked: false,
@@ -85,7 +85,7 @@ export default Ember.Route.extend({
               id: 9,
               type: 'check-item',
               attributes: {
-                title: "Our operational functions are seen as a source of competitive advantage.",
+                title: 'Наши производственные функции рассматриваются в качестве источника конкурентного преимущества.',
                 description: "",
                 category: "alignment",
                 checked: false,
@@ -96,7 +96,7 @@ export default Ember.Route.extend({
               id: 10,
               type: 'check-item',
               attributes: {
-                title: "Representation from our operations team is involved in development sprint planning.",
+                title: 'Представители нашей команды эксплуатации принимают участие в планировании спринтов для разработки.',
                 description: "",
                 category: "context",
                 checked: false,
@@ -107,7 +107,7 @@ export default Ember.Route.extend({
               id: 11,
               type: 'check-item',
               attributes: {
-                title: "We make potential changes visible to all members of our product team.",
+                title: 'Мы делаем потенциальные изменения видимыми для всех членов нашей продуктовой команды.',
                 description: "",
                 category: "context",
                 checked: false,
@@ -118,7 +118,7 @@ export default Ember.Route.extend({
               id: 12,
               type: 'check-item',
               attributes: {
-                title: "We have an automated system for running tasks and receiving notifications with our team chat.",
+                title: 'У нас имеется автоматизированная система запуска задач и настроена возможность получения нотификаций об их статусе в наш командный чат.',
                 description: "",
                 category: "context",
                 checked: false,
@@ -129,7 +129,7 @@ export default Ember.Route.extend({
               id: 13,
               type: 'check-item',
               attributes: {
-                title: "We consult with auditors and regulators regularly and seek guidance when designing systems.",
+                title: 'Мы регулярно консультируемся с аудиторами и органами регулирования, и просим наставлений при проектировании систем.',
                 description: "",
                 category: "context",
                 checked: false,
@@ -140,7 +140,7 @@ export default Ember.Route.extend({
               id: 14,
               type: 'check-item',
               attributes: {
-                title: "Our team is encouraged to question tasks and priorities.",
+                title: 'Обсуждение задач и их приоритетов является обычной практикой в нашей команде',
                 description: "",
                 category: "context",
                 checked: false,
@@ -151,7 +151,7 @@ export default Ember.Route.extend({
               id: 15,
               type: 'check-item',
               attributes: {
-                title: "We have a centralized instant message system including all members of our product team.",
+                title: 'У нас имеется централизованная система отправки мгновенных сообщений всем членам нашей продуктовой команды.',
                 description: "",
                 category: "context",
                 checked: false,
@@ -162,7 +162,7 @@ export default Ember.Route.extend({
               id: 16,
               type: 'check-item',
               attributes: {
-                title: "All members of our product team have access to environment status, metrics and history.",
+                title: 'Все члены нашей продуктовой команды имеют доступ к информации о статусе окружения, метриках и истории.',
                 description: "",
                 category: "context",
                 checked: false,
@@ -173,7 +173,7 @@ export default Ember.Route.extend({
               id: 17,
               type: 'check-item',
               attributes: {
-                title: "All members of our product team have access to code status, metrics and history.",
+                title: 'Все члены нашей продуктовой команды имеют доступ к информации о статусе кода, метриках и истории.',
                 description: "",
                 category: "context",
                 checked: false,
@@ -184,7 +184,7 @@ export default Ember.Route.extend({
               id: 18,
               type: 'check-item',
               attributes: {
-                title: "We cultivate an environment of continuous learning.",
+                title: 'Мы культивируем среду непрерывного обучения.',
                 description: "",
                 category: "learning",
                 checked: false,
@@ -195,7 +195,7 @@ export default Ember.Route.extend({
               id: 19,
               type: 'check-item',
               attributes: {
-                title: "We regularly celebrate our product team's learnings and success internally.",
+                title: 'Мы регулярно отмечаем успехи и новые знания, полученные нашей продуктовой командой.',
                 description: "",
                 category: "learning",
                 checked: false,
@@ -206,7 +206,7 @@ export default Ember.Route.extend({
               id: 20,
               type: 'check-item',
               attributes: {
-                title: "We regularly share our product team's learnings and success with the rest of our organization.",
+                title: 'Мы регулярно делимся полученными знаниями и успехами нашей продуктовой команды с остальной частью организации.',
                 description: "",
                 category: "learning",
                 checked: false,
@@ -217,7 +217,7 @@ export default Ember.Route.extend({
               id: 21,
               type: 'check-item',
               attributes: {
-                title: "We openly discuss failures in order to share learning.",
+                title: 'Мы открыто обсуждаем провалы и неудачи, чтобы поделиться опытом с другими.',
                 description: "",
                 category: "learning",
                 checked: false,
@@ -228,7 +228,7 @@ export default Ember.Route.extend({
               id: 22,
               type: 'check-item',
               attributes: {
-                title: "We identify skills needed to improve or address future objectives.",
+                title: 'Мы выявляем навыки, необходимые для совершенстования и достижения будущих целей.',
                 description: "",
                 category: "learning",
                 checked: false,
@@ -239,7 +239,7 @@ export default Ember.Route.extend({
               id: 23,
               type: 'check-item',
               attributes: {
-                title: "We strive to examine how we complete our work, and how effectively we complete it.",
+                title: 'Мы стремимся проводить анализ того, как мы выполняем нашу работу и как эффективно мы это делаем.',
                 description: "",
                 category: "learning",
                 checked: false,
@@ -250,9 +250,9 @@ export default Ember.Route.extend({
               id: 24,
               type: 'check-item',
               attributes: {
-                title: "We estimate based on measurement and past experience.",
+                title: 'Наши прогнозы основаны на измерениях и прошлом опыте',
                 description: "",
-                category: "",
+                category: "learning",
                 checked: false,
                 tags: ["Измерения"]
               }
@@ -261,7 +261,7 @@ export default Ember.Route.extend({
               id: 25,
               type: 'check-item',
               attributes: {
-                title: "Our software development cycle is 2 weeks or less.",
+                title: 'Цикл разработки нашего ПО равен 2 неделям или меньше.',
                 description: "",
                 category: "lifecycle",
                 checked: false,
@@ -272,8 +272,8 @@ export default Ember.Route.extend({
               id: 26,
               type: 'check-item',
               attributes: {
-                title: "Our software development cycle is defined by releasing a working change into production.",
-                description: "Iterative development and process optimization depends on repeatedly performing the critical functions of building and deploying software. The more it's done, the better it's understood, the easier it is to improve and automate.",
+                title: 'Цикл разработки нашего ПО определяется релизом рабочего изменения в продакшн.',
+                description: 'Итеративная разработка и оптимизация технологического процесса строятся на основе повторяющейся процедуры выполнения критически важных функций сборки и деплоя ПО. Чем чаще это делать, тем яснее и понятнее будет сам процесс и тем легче будет его автоматизировать и улучшить. ',
                 category: "lifecycle",
                 checked: false,
                 tags: ["Культура", "Измерения"]
@@ -283,7 +283,7 @@ export default Ember.Route.extend({
               id: 27,
               type: 'check-item',
               attributes: {
-                title: "We stop development upon discovering a defect and prioritize its repair.",
+                title: 'Мы приостанавливаем разработку при обнаружении неисправности и ставим в качестве приоритета её устранение.',
                 description: "",
                 category: "lifecycle",
                 checked: false,
@@ -294,8 +294,8 @@ export default Ember.Route.extend({
               id: 28,
               type: 'check-item',
               attributes: {
-                title: "Developers or product owners are able to deploy our product to production.",
-                description: "The focus here is empowering the most informed to perform the task. Someone intimately familiar with a change is best positioned to evaluate its performance and correctness. Developers and POs should be empowered to measure and visualize the operation of the change as well, in order to give them a holistic view of the changed system.",
+                title: 'Разработчики или владельцы продуктов могут производить деплой нашего продукта в продакшн.',
+                description: 'Целью здесь является дать полномочия выполнять данную задачу наиболее информированным людям. Кто-то, кто близко знаком с изменением, лучше все подходит для оценки правильности и работы изменения. Разработчики и владельцы продуктов также должны иметь возможность измерять и визуализировать работу изменения для получения целостной картины об измененной системе.  ',
                 category: "lifecycle",
                 checked: false,
                 tags: ["Культура", "Автоматизация"]
@@ -305,8 +305,8 @@ export default Ember.Route.extend({
               id: 29,
               type: 'check-item',
               attributes: {
-                title: "We have automated testing prior to automated production deployment.",
-                description: "Production deploys can still be manually initiated in cases where a signoff is required, yet the testing, deployment process and validation should be entirely automated to ensure consistency, accuracy and optimal speed. Automating deploys means no copy and paste, less security risk, more auditability, more confidence.",
+                title: 'Мы автоматизировали тестирование до того, как автоматизировали деплой в продакшн.',
+                description: 'Деплои в продакшн все еще могут прозводиться в ручную в случае, когда для этого требуется одобрение (signoff), однако тестирование, процесс разработки и валидации должны быть полностью автоматизированы для обеспечения непротиворичевости, точности и оптимальной скорости. Автоматизация деплоев означает отсутствие ручных действий, снижение рисков безопасности, повышение контролируемости процесса и уверенности в нем. ',
                 category: "lifecycle",
                 checked: false,
                 tags: ["Автоматизация", "Тестирование"]
@@ -316,8 +316,8 @@ export default Ember.Route.extend({
               id: 30,
               type: 'check-item',
               attributes: {
-                title: "Our configuration of systems is automated.",
-                description: "Friends don't let friends manually configure systems.",
+                title: 'Наш процесс настройки конфигурации систем автоматизирован.',
+                description: 'Друзья не дают друзьям вручную настраивать системы.',
                 category: "lifecycle",
                 checked: false,
                 tags: ["Автоматизация"]
@@ -327,8 +327,8 @@ export default Ember.Route.extend({
               id: 31,
               type: 'check-item',
               attributes: {
-                title: "Our deployed system configuration is immutable.",
-                description: "Immutability is an ideal state as it allows operations to focus on optimizing consistent and predictable systems.",
+                title: 'Конфигурация задеплоенной системы неизменна.',
+                description: 'Неизменность является идеальным состоянием, т.к. позволяет эксплуатации фокусироваться на оптимизации непротиворечивых и предсказуемых систем.',
                 category: "lifecycle",
                 checked: false,
                 tags: ["Автоматизация"]
@@ -338,8 +338,8 @@ export default Ember.Route.extend({
               id: 32,
               type: 'check-item',
               attributes: {
-                title: "Our release and deployment automation is environment agnostic.",
-                description: "To avoid fragmentation or repetition, it's best to limit environmental differences to variable values only.",
+                title: 'Автоматизация релиза и деплоя не имеет привязки к окружению.',
+                description: 'Для того чтобы избежать фрагментации и повторений лучше всего ограничить различия в окружениях лишь настрокой значений переменных.',
                 category: "lifecycle",
                 checked: false,
                 tags: ["Автоматизация", "Тестирование"]
@@ -349,8 +349,8 @@ export default Ember.Route.extend({
               id: 33,
               type: 'check-item',
               attributes: {
-                title: "Our subject matter expertise is not isolated to individuals.",
-                description: "If you're lucky, you're surrounded by experts. Ideally, they're not just islands of knowledge and responsibility, but part of a peer group within the organization.",
+                title: 'Наша экспертиза в предметной области не ограничивается несколькими людьми.',
+                description: 'Допустим, что тебе повезло, и ты оказался окружен экспертами.  В идеальном случае, они не представляют из себя просто острова знаний и ответсвенности , а являются частью группы на равне со всеми в рамках одной организации.',
                 category: "organisation",
                 checked: false,
                 tags: ["Культура", "Шэринг"]
@@ -360,7 +360,7 @@ export default Ember.Route.extend({
               id: 34,
               type: 'check-item',
               attributes: {
-                title: "We enable peer and cross-functional review for changes",
+                title: 'Мы даем возможность равноправного и кросс-функционального анализа изменений',
                 description: "",
                 category: "organisation",
                 checked: false,
@@ -371,8 +371,8 @@ export default Ember.Route.extend({
               id: 35,
               type: 'check-item',
               attributes: {
-                title: "Our organization is configured around cross-functional teams.",
-                description: "Cross-functional teams are more empowered to build and deploy their own software without being hindered by constraints. They also avoid an 'us vs them' effect of siloed functional teams, learn from, and foster awareness and empathy for eachothers priorities and interests.",
+                title: 'Наша организация выстроена вокруг кросс-функциональных команд.',
+                description: 'Кросс-функциональные команды имеют больше возможностей собирать и деплоить их собственное ПО без каких-либо ограничений.  Они позволяют избежать "мы против них" эффекта, который наблюдается в случае отдельных функциональных команд, наладить процесс взаимного обучения и достигнуть понимания приоритетов и интересов друг друга.',
                 category: "organisation",
                 checked: false,
                 tags: ["Культура"]
@@ -382,8 +382,8 @@ export default Ember.Route.extend({
               id: 36,
               type: 'check-item',
               attributes: {
-                title: "Our teams are customer and product oriented.",
-                description: "Customer focus helps align teams towards valuable goals, and keeps development and engineering zeroed in on delivery and processing feedback.",
+                title: 'Наши команды являются клиент и продукт-ориентированными.',
+                description: 'Ориентация на клиента помогает направить команды на реализацию значимых целей и заставляет разработку и проектирование фокусировать свое внимание на поставках и обработке отзывов. ',
                 category: "organisation",
                 checked: false,
                 tags: ["Культура"]
@@ -393,7 +393,7 @@ export default Ember.Route.extend({
               id: 37,
               type: 'check-item',
               attributes: {
-                title: "We review priorities on a regular basis.",
+                title: 'Мы перессматриваем приоритеты на регулярной основе.',
                 description: "",
                 category: "organisation",
                 checked: false,
@@ -404,7 +404,7 @@ export default Ember.Route.extend({
               id: 38,
               type: 'check-item',
               attributes: {
-                title: "Our developers have access to production-like systems to work and test on.",
+                title: 'Наши разработчики имеют доступ к системам, аналогичным производственным, для работы и тестирования.',
                 description: "",
                 category: "organisation",
                 checked: false,
@@ -415,7 +415,7 @@ export default Ember.Route.extend({
               id: 39,
               type: 'check-item',
               attributes: {
-                title: "Our developers have access to production-like data to work and test against.",
+                title: 'Наши разработчики имеют доступ к данным, аналогичным производственным, для работы и тестирования.',
                 description: "",
                 category: "organisation",
                 checked: false,
@@ -426,7 +426,7 @@ export default Ember.Route.extend({
               id: 40,
               type: 'check-item',
               attributes: {
-                title: "Our developers have access to dependencies required to build and test software.",
+                title: 'Наши разработчики имеют доступ к зависимостям, требуемым для сборки и тестирования ПО.',
                 description: "",
                 category: "organisation",
                 checked: false,
@@ -437,8 +437,8 @@ export default Ember.Route.extend({
               id: 41,
               type: 'check-item',
               attributes: {
-                title: "Our organization follows agile development practices.",
-                description: "To realize the full power of a focus on DevOps, feedback and regular iteration are critical. DevOps is built on agile.",
+                title: 'Наша организация использует Agile-практики.',
+                description: 'Для того, чтобы в полной мере реализовать мощь DevOps, обратные связи и регулярные итерации имеют решающее значение. DevOps построен на Agile.',
                 category: "process",
                 checked: false,
                 tags: ["Культура"]
@@ -448,8 +448,8 @@ export default Ember.Route.extend({
               id: 42,
               type: 'check-item',
               attributes: {
-                title: "We practice blameless postmortems.",
-                description: "Focus on learning and continual improvement. This is the human equivalent of focusing on MTTR vs MTBF. Read: John Allspaw's great article on Etsy's process",
+                title: 'Мы практикуем разбор и анализ инцидентов без обвинения кого-либо за совершенные ошибки.',
+                description: 'Фокус на обучении и постоянном совершенствовании. Это сродни фокусированию на MTTR vs MTBF, только применитоельно к человеку. Читайте: замечательная статья John Allspaw о процессах в Etsy',
                 category: "process",
                 checked: false,
                 tags: ["Культура", "Шэринг"]
@@ -459,7 +459,7 @@ export default Ember.Route.extend({
               id: 43,
               type: 'check-item',
               attributes: {
-                title: "We regularly examine constraints in our delivery process.",
+                title: 'Мы регулярно рассматриваем существующие ограничения в нашем процессе доставки.',
                 description: "",
                 category: "process",
                 checked: false,
@@ -470,7 +470,7 @@ export default Ember.Route.extend({
               id: 44,
               type: 'check-item',
               attributes: {
-                title: "Our system configuration is committed into version control.",
+                title: 'Наша конфигурация хранится в системе управления версиями.',
                 description: "",
                 category: "process",
                 checked: false,
@@ -481,7 +481,7 @@ export default Ember.Route.extend({
               id: 45,
               type: 'check-item',
               attributes: {
-                title: "Our documentation is version controlled and shared.",
+                title: 'Наша документация версионируется и доступна всем',
                 description: "",
                 category: "process",
                 checked: false,
@@ -492,7 +492,7 @@ export default Ember.Route.extend({
               id: 46,
               type: 'check-item',
               attributes: {
-                title: "We maintain a backlog of tasks, visible to all team members and available for comment.",
+                title: 'Мы поддерживаем список накопившихся задач, который виден всем членам команды и доступен для комментариев.',
                 description: "",
                 category: "process",
                 checked: false,
@@ -503,7 +503,7 @@ export default Ember.Route.extend({
               id: 47,
               type: 'check-item',
               attributes: {
-                title: "We practice test or behaviour driven development.",
+                title: 'Наша разработка основана на TDD (test-driven development) или BDD (behaviour-driven development)',
                 description: "",
                 category: "process",
                 checked: false,
@@ -514,8 +514,8 @@ export default Ember.Route.extend({
               id: 48,
               type: 'check-item',
               attributes: {
-                title: "We test our changes against a merge with our mainline code.",
-                description: "Until you prove your code isn't a destructive regression, it shouldn't be deployed for someone else to discover. Automated testing and frequent merging should catch most of these issues, and make sure you don't find out about problems from someone else - or worse, Twitter.",
+                title: 'Мы тестируем изменения перед слиянием в основную ветку.',
+                description: 'Пока ты не докажешь, что твой код не вносит деструктивную регрессию, его не следует деплоить.  Автоматизированное тестирование и частые мерджи должны отлавливать большинство таких проблем с кодом. Сделай все, чтобы быть уверенным, что не узнаешь потом о проблеме от кого-то еще или, что еще хуже, из Твитера.',
                 category: "process",
                 checked: false,
                 tags: ["Тестирование"]
@@ -525,7 +525,7 @@ export default Ember.Route.extend({
               id: 49,
               type: 'check-item',
               attributes: {
-                title: "We test our changes against production-equivalent load and use patterns.",
+                title: 'Мы проверяем наши изменения нагрузочным тестированием на основе реальных данных и шаблонов использования.',
                 description: "",
                 category: "process",
                 checked: false,
