@@ -532,6 +532,141 @@ export default Ember.Route.extend({
                 tags: ["Тестирование"]
               }
           }
+      ],
+      included: [
+        {
+          id: 'alignment',
+          type: 'category',
+          attributes: {
+            title: 'Согласованность',
+            description: 'Объединение групповых и индивидуальных целей, а также направления деятельности, на основе одного представления об организации.',
+          },
+          relationships: {
+            checkItems: {
+              data: [
+                {id: 1, type: 'check-item'},
+                {id: 2, type: 'check-item'},
+                {id: 3, type: 'check-item'},
+                {id: 4, type: 'check-item'},
+                {id: 5, type: 'check-item'},
+                {id: 6, type: 'check-item'},
+                {id: 7, type: 'check-item'},
+                {id: 8, type: 'check-item'},
+                {id: 9, type: 'check-item'},
+              ]
+            }
+          }
+        },
+        {
+          id: 'context',
+          type: 'category',
+          attributes: {
+            title: 'Контекст',
+            description: 'Делая необходимую информацию и список контактов доступными для тех, кому это требуется и когда это требуется.',
+          },
+          relationships: {
+            checkItems: {
+              data: [
+                {id: 10, type: 'check-item'},
+                {id: 11, type: 'check-item'},
+                {id: 12, type: 'check-item'},
+                {id: 13, type: 'check-item'},
+                {id: 14, type: 'check-item'},
+                {id: 15, type: 'check-item'},
+                {id: 16, type: 'check-item'},
+                {id: 17, type: 'check-item'},
+              ]
+            }
+          }
+        },
+        {
+          id: 'learning',
+          type: 'category',
+          attributes: {
+            title: 'Обучение',
+            description: 'Предоставление возможностей личностного роста и стимулирование понимания через процесс постоянного совершенстования.',
+          },
+          relationships: {
+            checkItems: {
+              data: [
+                {id: 18, type: 'check-item'},
+                {id: 19, type: 'check-item'},
+                {id: 20, type: 'check-item'},
+                {id: 21, type: 'check-item'},
+                {id: 22, type: 'check-item'},
+                {id: 23, type: 'check-item'},
+                {id: 24, type: 'check-item'},
+              ]
+            }
+          }
+        },
+        {
+          id: 'lifecycle',
+          type: 'category',
+          attributes: {
+            title: 'Жизненный цикл',
+            description: 'Отношение к ПО как к продукту, заслуживающему заботы, внимания и размышлений в рамках постоянно меняющейся экосистемы.',
+          },
+          relationships: {
+            checkItems: {
+              data: [
+                {id: 25, type: 'check-item'},
+                {id: 26, type: 'check-item'},
+                {id: 27, type: 'check-item'},
+                {id: 28, type: 'check-item'},
+                {id: 29, type: 'check-item'},
+                {id: 30, type: 'check-item'},
+                {id: 31, type: 'check-item'},
+                {id: 32, type: 'check-item'},
+              ]
+            }
+          }
+        },
+        {
+          id: 'organization',
+          type: 'category',
+          attributes: {
+            title: 'Организация',
+            description: 'Создание структуры, обеспечивающей взаимодействие и сплоченность, которая позволит поддерживать сотрудничество и продуктивность работы.',
+          },
+          relationships: {
+            checkItems: {
+              data: [
+                {id: 33, type: 'check-item'},
+                {id: 34, type: 'check-item'},
+                {id: 35, type: 'check-item'},
+                {id: 36, type: 'check-item'},
+                {id: 37, type: 'check-item'},
+                {id: 38, type: 'check-item'},
+                {id: 39, type: 'check-item'},
+                {id: 40, type: 'check-item'},
+              ]
+            }
+          }
+        },
+        {
+          id: 'process',
+          type: 'category',
+          attributes: {
+            title: 'Процесс',
+            description: 'Rituals crafted to foster consistency and confidence, providing a framework for continuous improvement.',
+          },
+          relationships: {
+            checkItems: {
+              data: [
+                {id: 41, type: 'check-item'},
+                {id: 42, type: 'check-item'},
+                {id: 43, type: 'check-item'},
+                {id: 44, type: 'check-item'},
+                {id: 45, type: 'check-item'},
+                {id: 46, type: 'check-item'},
+                {id: 47, type: 'check-item'},
+                {id: 48, type: 'check-item'},
+                {id: 49, type: 'check-item'},
+              ]
+            }
+          }
+        }
       ]
     });
   }

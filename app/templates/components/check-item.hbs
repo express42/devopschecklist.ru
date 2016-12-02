@@ -4,8 +4,9 @@
             <div class="check-item-checkbox-container">
 
                 <div class="checkbox">
-                    <input type="checkbox" id="cb-{{id}}" name="cb-{{id}}" />
-                    <label for="cb-{{id}}"></label>
+                    {{input type="checkbox" elementId=(concat "cb-" item.id) checked=item.checked}}
+                    <label for="cb-{{item.id}}">
+                    </label>
                 </div>
 
             </div>
@@ -13,20 +14,22 @@
         <div class="col-lg-9">
 
             <div class="check-item">
-              <h4>{{title}}</h4>
-              <p class="description">{{description}}</p>
+              <h4>{{item.title}}</h4>
+              {{#if (and item.description showDescription)}}
+                <p class="description">{{item.description}}</p>
+              {{/if}}
               <p class="tags">
-                  {{#each tags as |tag|}}
+                  {{#each item.tags as |tag|}}
                     <span class="tag">{{ tag }}</span>
                   {{/each}}
               </p>
             </div>
 
         </div>
-        {{#if description}}
-        <div class="col-lg-1">
-            <span class="check-item-description-btn">&#8964;</span>
-        </div>
+        {{#if item.description}}
+          <div class="col-lg-1">
+              <span class="check-item-description-btn" {{action "toggleDescription"}}>&#8964;</span>
+          </div>
         {{/if}}
 
     </div>
