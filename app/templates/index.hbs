@@ -2,110 +2,23 @@
 
 <div class="items">
 
-    <div class="strike">
-        <span>Согласованность</span>
-    </div>
+    {{#each model as |category|}}
 
-    <div class="row">
-        <div class="col-lg-12 category-description">
-            Объединение групповых и индивидуальных целей, а также направления деятельности, на основе одного представления об организации.
-        </div>
-    </div>
+      <div class="strike">
+          <span>{{category.title}}</span>
+      </div>
 
+      <div class="row">
+          <div class="col-lg-12 category-description">
+              {{category.description}}
+          </div>
+      </div>
 
-    {{#each model as |item|}}
-        {{#if item.isAlignment}}
-        {{#check-item id=item.id title=item.title tags=item.tags description=item.description}}
-        {{/check-item}}
-        {{/if}}
+      {{#each category.checkItems as |item|}}
+          {{check-item item = item}}
+      {{/each}}
+
     {{/each}}
-
-    <div class="strike">
-        <span>Контекст</span>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-12 category-description">
-            Делая необходимую информацию и список контактов доступными для тех, кому это требуется и когда это требуется.
-        </div>
-    </div>
-
-    {{#each model as |item|}}
-        {{#if item.isContext}}
-        {{#check-item id=item.id title=item.title tags=item.tags description=item.description}}
-        {{/check-item}}
-        {{/if}}
-    {{/each}}
-
-    <div class="strike">
-        <span>Обучение</span>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-12 category-description">
-            Предоставление возможностей личностного роста и стимулирование понимания через процесс постоянного совершенстования.
-        </div>
-    </div>
-
-    {{#each model as |item|}}
-        {{#if item.isLearning}}
-        {{#check-item id=item.id title=item.title tags=item.tags description=item.description}}
-        {{/check-item}}
-        {{/if}}
-    {{/each}}
-
-    <div class="strike">
-        <span>Жизненный цикл</span>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-12 category-description">
-            Отношение к ПО как к продукту, заслуживающему заботы, внимания и размышлений в рамках постоянно меняющейся экосистемы.
-        </div>
-    </div>
-
-
-    {{#each model as |item|}}
-        {{#if item.isLifecycle}}
-        {{#check-item id=item.id title=item.title tags=item.tags description=item.description}}
-        {{/check-item}}
-        {{/if}}
-    {{/each}}
-
-    <div class="strike">
-        <span>Organization</span>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-12 category-description">
-            Providing structure for interaction and cohesion supporting collaboration and productivity.
-        </div>
-    </div>
-
-    {{#each model as |item|}}
-        {{#if item.isOrganization}}
-        {{#check-item id=item.id title=item.title tags=item.tags description=item.description}}
-        {{/check-item}}
-        {{/if}}
-    {{/each}}
-
-    <div class="strike">
-        <span>Организация</span>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-12 category-description">
-            Создание структуры, обеспечивающей взаимодействие и сплоченность, которая позволит поддерживать сотрудничество и продуктивность работы.
-        </div>
-    </div>
-
-    {{#each model as |item|}}
-        {{#if item.isProcess}}
-        {{#check-item id=item.id title=item.title tags=item.tags description=item.description}}
-        {{/check-item}}
-        {{/if}}
-    {{/each}}
-
 
 </div>
 
@@ -113,8 +26,19 @@
     <div class="strike">
         <span>Результат</span>
     </div>
+
+    <div class="result-list">
+        {{#if showResult}}
+            {{#each model as |category|}}
+                {{result-item item = category}}
+            {{/each}}
+        {{/if}}
+    </div>
+
     <br><br>
-    <button type="button" class="btn btn-default btn-lg">Посчитать!</button>
+    <button type="button" class="btn btn-default btn-lg" {{action "calculateResult"}}>Посчитать!</button>
+    <br><br>
+
 </div>
 
 <div class="footer">

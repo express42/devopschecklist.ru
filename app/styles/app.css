@@ -71,6 +71,15 @@ body {
     background-color: #fafafa;
 }
 
+.result-item-ch {
+    background-color: #ffffff;
+}
+.result-item-ch:nth-child(odd) {
+    background-color: #ffffff;
+}
+.result-item-ch:nth-child(even) {
+    background-color: #fafafa;
+}
 
 .check-item h4 {
     font-size: 1.5em;
@@ -89,7 +98,15 @@ body {
 
 .score {
     text-align: center;
-    padding: 40px;
+}
+
+.result-score {
+    vertical-align: middle;
+}
+
+.result-item {
+    text-align: left;
+    padding: 0px 40px;
 }
 
 .footer {
@@ -105,6 +122,15 @@ body {
 }
 
 .check-item-container:hover{
+   background-color: #f4f8fb;
+}
+
+.result-item-container {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.result-item-container:hover{
    background-color: #f4f8fb;
 }
 
