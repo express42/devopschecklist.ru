@@ -649,7 +649,7 @@ export default Ember.Route.extend({
           type: 'category',
           attributes: {
             title: 'Процесс',
-            description: 'Rituals crafted to foster consistency and confidence, providing a framework for continuous improvement.',
+            description: 'Ритуалы, направленные на воспитание уверенности и системности, тем самым обеспечивающие основу для постоянного совершенствования.',
           },
           relationships: {
             checkItems: {
