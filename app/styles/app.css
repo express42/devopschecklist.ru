@@ -141,6 +141,8 @@ body {
 .check-item-description-btn {
     font-size: 3em;
     color: #ccc;
+    cursor: pointer;
+    cursor: hand;
 }
 
 .category-description {
