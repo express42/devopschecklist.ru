@@ -1,6 +1,6 @@
 <div class="check-item-container">
     <div class="row">
-        <div class="col-lg-2">
+        <div class="col-lg-2" {{action "checkItemClicked" item}}>
             <div class="check-item-checkbox-container">
 
                 <div class="checkbox">
@@ -11,7 +11,7 @@
 
             </div>
         </div>
-        <div class="col-lg-9">
+        <div class="col-lg-9" {{action "checkItemClicked" item}}>
 
             <div class="check-item">
               <h4>{{item.title}}</h4>

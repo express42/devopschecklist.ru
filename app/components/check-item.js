@@ -5,6 +5,14 @@ export default Ember.Component.extend({
     actions: {
         toggleDescription() {
             this.toggleProperty('showDescription');
+        },
+        checkItemClicked(item) {
+            if (item.get('checked')) {
+                item.set('checked', false);
+            } else {
+                item.set('checked', true);
+            }
         }
     }
+
 });
