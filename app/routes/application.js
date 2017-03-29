@@ -551,7 +551,6 @@ export default Ember.Route.extend({
                 {id: 5, type: 'check-item'},
                 {id: 6, type: 'check-item'},
                 {id: 7, type: 'check-item'},
-                {id: 8, type: 'check-item'},
                 {id: 9, type: 'check-item'},
               ]
             }
